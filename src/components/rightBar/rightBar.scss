@@ -1,0 +1,85 @@
+.rightBar {
+    flex: 3;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container {
+        padding: 20px;
+
+        .item {
+            -webkit-box-shadow: 10px 0px 5px 1px rgba(240, 231, 240, 1);
+            -moz-box-shadow: 10px 0px 5px 1px rgba(240, 231, 240, 1);
+            box-shadow: 10px 0px 5px 1px rgba(240, 231, 240, 1);
+            padding: 5px 10px;
+
+            span {
+                color: gray;
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 10px 0px;
+
+                .userInfo {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    span {
+                        font-weight: 500;
+                        color: black;
+                    }
+                    .activity{
+                        color: gray;
+                        font-size: 10px;
+                    }
+
+                    .online{
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        color: limegreen;
+                    }
+                }
+
+                .button {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    button {
+                        border: none;
+                        padding: 4px;
+                        color: white;
+                        cursor: pointer;
+                        border-radius: 4px;
+
+                        &:first-child {
+                            background-color: blue;
+                        }
+
+                        &:last-child {
+                            background-color: red;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
